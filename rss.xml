@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>Hexo</title>
+        <title>Leo Meng</title>
         <subtitle></subtitle>
-        <icon>http://example.com/images/favicon.ico</icon>
-        <link>http://example.com</link>
+        <icon>http://leomeng86.github.io/images/favicon.ico</icon>
+        <link>http://leomeng86.github.io</link>
         <author>
-          <name>John Doe</name>
+          <name>Leo Meng</name>
         </author>
         <description></description>
-        <language>en</language>
-        <pubDate>Sun, 04 Sep 2022 07:50:24 +0800</pubDate>
-        <lastBuildDate>Sun, 04 Sep 2022 07:50:24 +0800</lastBuildDate>
+        <language>zh-CN</language>
+        <pubDate>Sun, 04 Sep 2022 08:24:44 +0800</pubDate>
+        <lastBuildDate>Sun, 04 Sep 2022 08:24:44 +0800</lastBuildDate>
     </channel>
 </rss>
