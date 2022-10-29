@@ -8,11 +8,73 @@
     <author>
       <name>Leo Meng</name>
     </author>
-    <updated>2022-09-08T01:56:17.000Z</updated>
+    <updated>2022-10-29T08:38:54.000Z</updated>
     <category term="笔记" />
     <category term=" c++" />
     <category term=" c" />
     <category term=" 数据结构" />
+    <entry>
+        <id>http://leomeng86.github.io/2022/10/29/cpp/CPP%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/</id>
+        <title>CPP课程设计</title>
+        <link rel="alternate" href="http://leomeng86.github.io/2022/10/29/cpp/CPP%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/"/>
+        <content type="html">&lt;h2 id=&#34;模拟即时通信系统实现&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#模拟即时通信系统实现&#34;&gt;#&lt;/a&gt; 模拟即时通信系统实现&lt;/h2&gt;
+&lt;h3 id=&#34;设计任务分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设计任务分析&#34;&gt;#&lt;/a&gt; 设计任务分析&lt;/h3&gt;
+&lt;p&gt;使用 C++ 设计一个模拟即时通讯系统，使用 socket 套接字通信技术，完成用户对用户的交流和群内交流，使用多态继承等面向对象技术，QQ，微信，微博系统的建立，实现群管理等功能。&lt;/p&gt;
+&lt;h3 id=&#34;设计方案&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设计方案&#34;&gt;#&lt;/a&gt; 设计方案&lt;/h3&gt;
+&lt;p&gt;本次实验使用 Qt 进行开发，完成可视化编程，网络通信编程，数据库编程和多线程编程任务，使用多态及继承等面向对象设计，基本实现前后端分离，客户端服务段分离。&lt;/p&gt;
+&lt;h4 id=&#34;客户端&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#客户端&#34;&gt;#&lt;/a&gt; 客户端&lt;/h4&gt;
+&lt;h5 id=&#34;后端&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#后端&#34;&gt;#&lt;/a&gt; 后端&lt;/h5&gt;
+&lt;p&gt;QQ 端支持群和好友聊天，微信端仅支持好友交流，微博端为全体用户分享生活的平台，无好友机制。&lt;/p&gt;
+&lt;p&gt;平台类的建立：建立 platform_msj 基类，QQ_platform_msj, WeChat_platform_msj,  WeiBo_platform_msj 等三个派生类继承基类。&lt;/p&gt;
+&lt;p&gt;用户类建立：建立 users_msj 类，设计 QQ_users_msj 类继承 users_msj 类。&lt;/p&gt;
+&lt;p&gt;群类建立：建立 Group_msj 类。&lt;/p&gt;
+&lt;h5 id=&#34;前端&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前端&#34;&gt;#&lt;/a&gt; 前端&lt;/h5&gt;
+&lt;p&gt;设计 6 个页面：frontpage_msj, loginpage_msj, register_msj, friend_msj, tepclient_msj，groupmanage_msj。&lt;/p&gt;
+&lt;p&gt;Frontpage_msj 实现了 QQ，微信，微博的选择，通过不同的 QPushbutton 的槽函数，使用 platform_msj 基类指针，new 子类对象，并读取数据库中的相应用户信息，保存到 QVector 中。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://link.jscdn.cn/sharepoint/aHR0cHM6Ly9tYWlsc2psdWVkdWNuLW15LnNoYXJlcG9pbnQuY29tLzppOi9nL3BlcnNvbmFsL21lbmdzajU1MjFfbWFpbHNfamx1X2VkdV9jbi9FZDJlZ0xjY0pudEpqZFZNTGhjbjZBb0JiTDNBUklGbmNDaEdlSHdZRk1GcU5n.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Loginpage_msj 实现了登录功能，以及注册页面的跳转，通过对用户 id 和 password 的判断，实现对应用户登录，并从该用户对应的文件中读入相应好友以及群组信息。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://link.jscdn.cn/sharepoint/aHR0cHM6Ly9tYWlsc2psdWVkdWNuLW15LnNoYXJlcG9pbnQuY29tLzppOi9nL3BlcnNvbmFsL21lbmdzajU1MjFfbWFpbHNfamx1X2VkdV9jbi9FUzIwaGpya0FKdFB0ZlNoOXlCUEZ4VUI4azJERlRCbXp5MWZmbTNMd3ZEQnFn.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://link.jscdn.cn/sharepoint/aHR0cHM6Ly9tYWlsc2psdWVkdWNuLW15LnNoYXJlcG9pbnQuY29tLzppOi9nL3BlcnNvbmFsL21lbmdzajU1MjFfbWFpbHNfamx1X2VkdV9jbi9FZGxUb3M5LUFFeExwcFRlT0lCWDZqOEJ0RThWN0RsSElXUGtVMHhGNWtZcWZ3.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Friendpage_msj 实现了添加好友新建群以及群的功能，且使用了网络编程，加群和好友的方案均采用单方同意即可，同时在 groupmanage_msj 功能中，拉入好友以及删除群友，采用直接拉入和踢出的策略。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://link.jscdn.cn/sharepoint/aHR0cHM6Ly9tYWlsc2psdWVkdWNuLW15LnNoYXJlcG9pbnQuY29tLzppOi9nL3BlcnNvbmFsL21lbmdzajU1MjFfbWFpbHNfamx1X2VkdV9jbi9FU0RqdjZnb2dxZE5oNGJ4TVVEMkdhRUJzTVNvRTgwWmczNDJnaWhMLUo3bU1B.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://link.jscdn.cn/sharepoint/aHR0cHM6Ly9tYWlsc2psdWVkdWNuLW15LnNoYXJlcG9pbnQuY29tLzppOi9nL3BlcnNvbmFsL21lbmdzajU1MjFfbWFpbHNfamx1X2VkdV9jbi9FZU83TENfbThoOUtvUzB4cFNPZzdHSUJKZ1dLYUd3X3RlSE1MTXpST19mUFBn.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://link.jscdn.cn/sharepoint/aHR0cHM6Ly9tYWlsc2psdWVkdWNuLW15LnNoYXJlcG9pbnQuY29tLzppOi9nL3BlcnNvbmFsL21lbmdzajU1MjFfbWFpbHNfamx1X2VkdV9jbi9FYnFmTEk2Yy1VUkhxNFZzM2pXY2dzb0JsTGlIYllPU1pIanZUOThuemlSeHBR.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Tcpclient_msj 使用 socket 进行通讯，向服务端发送消息，同时接收服务端发来的消息。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://link.jscdn.cn/sharepoint/aHR0cHM6Ly9tYWlsc2psdWVkdWNuLW15LnNoYXJlcG9pbnQuY29tLzppOi9nL3BlcnNvbmFsL21lbmdzajU1MjFfbWFpbHNfamx1X2VkdV9jbi9FWWkxWFJqNGwxbEZzRGJ4ZkxSZnlzWUJFRUhuUHhLcGZQeXduaklsQTU3aXNB.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;服务端&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#服务端&#34;&gt;#&lt;/a&gt; 服务端&lt;/h4&gt;
+&lt;h5 id=&#34;后端-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#后端-2&#34;&gt;#&lt;/a&gt; 后端&lt;/h5&gt;
+&lt;p&gt;继承了 QTcpSocket 类建立了 tcpclientsocket_msj 类，继承了 QTcpServer 类建立了 Server_msj 类。实现了收到消息通过 QString 类的 section 成员函数实现了 ## 字符串之间的分割，通过其中附带的发送者信息和接收者信息查询已经完成绑定的 socket，如果在线即转发消息，若不在线则转发其不在线消息。群和微博直接转发消息，不进行判断。&lt;/p&gt;
+&lt;h5 id=&#34;前端-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前端-2&#34;&gt;#&lt;/a&gt; 前端&lt;/h5&gt;
+&lt;p&gt;仅设计一个页面，通过 QListWidget 记录登录日志，通过 QtextEdit 记录收发信息。可使用广播功能向所有打开聊天框的用户转发消息。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://link.jscdn.cn/sharepoint/aHR0cHM6Ly9tYWlsc2psdWVkdWNuLW15LnNoYXJlcG9pbnQuY29tLzppOi9nL3BlcnNvbmFsL21lbmdzajU1MjFfbWFpbHNfamx1X2VkdV9jbi9FV2lHN05hWDdaeEd2cmxZeGJRajZFQUJzTW9WNV9abDVOMU1fRXBDNkxuVFBB.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;详细设计&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#详细设计&#34;&gt;#&lt;/a&gt; 详细设计&lt;/h3&gt;
+&lt;h4 id=&#34;用户信息保存&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#用户信息保存&#34;&gt;#&lt;/a&gt; 用户信息保存&lt;/h4&gt;
+&lt;p&gt;通过数据库读写，在选定平台后，读入信息，使用 sql 语言・，使用 atEnd () 成员函数判断是否读到文件尾部，以 users_msj 类存到 platfrom_msj 的 QVector 成员中。在注册时候，使用 append 模式，QTextStream 流输入并在 QVector 中加入新信息。&lt;/p&gt;
+&lt;h4 id=&#34;好友和群的添加&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#好友和群的添加&#34;&gt;#&lt;/a&gt; 好友和群的添加&lt;/h4&gt;
+&lt;p&gt;分别在相应 QVector 中插入信息，同时向相应的文件中进行读写，再对界面进行更新。&lt;/p&gt;
+&lt;h4 id=&#34;微信qq微博多平台实现&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#微信qq微博多平台实现&#34;&gt;#&lt;/a&gt; 微信 QQ 微博多平台实现&lt;/h4&gt;
+&lt;p&gt;通过设计 platform_msj 基类，设置了 init () 等接口，再使用 QQ_platform_msj，WeChat_platform_msj，WeiBo_platform_msj 等派生类对父类进行继承和重写，实现了多平台。其中 QQ 支持好友和群功能，微信支持好友功能，微博所有用户均在同一平台进行聊天。&lt;/p&gt;
+&lt;h4 id=&#34;不同平台用户存不同信息&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#不同平台用户存不同信息&#34;&gt;#&lt;/a&gt; 不同平台用户存不同信息&lt;/h4&gt;
+&lt;p&gt;设计 users_msj 类，使用 QQ_users_msj 继承父类，并派生，实现了 QQ 额外的存群列表的功能。&lt;/p&gt;
+&lt;h4 id=&#34;通信功能的实现&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#通信功能的实现&#34;&gt;#&lt;/a&gt; 通信功能的实现&lt;/h4&gt;
+&lt;p&gt;使用 socket 套接字通信的方式，通过继承 Qt 自带的 QTcpServer 和 QTcpSocket 类，使用 connect 信号和 readyread 信号，连接服务器和读取服务器发来的信息，通过重写 QTcpServer 的 incomingConnection 成员函数，实现保存客户端套接字和姓名。&lt;/p&gt;
+&lt;h4 id=&#34;消息的传递&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#消息的传递&#34;&gt;#&lt;/a&gt; 消息的传递&lt;/h4&gt;
+&lt;p&gt;进行消息传递时候，为实现点对点或点对群通信，使用 QString 的 section 成员函数，通过 ## 分割各部分信息，在服务端进行解构，向指定客户端发送消息。&lt;/p&gt;
+&lt;h4 id=&#34;历史记录保存&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#历史记录保存&#34;&gt;#&lt;/a&gt; 历史记录保存&lt;/h4&gt;
+&lt;p&gt;使用 MySQL，每条信息按发送者，接收者，时间，消息进行存储，每次初始化时，从 MySQL 中将历史消息重新读入。&lt;/p&gt;
+&lt;h3 id=&#34;总结与体会&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#总结与体会&#34;&gt;#&lt;/a&gt; 总结与体会&lt;/h3&gt;
+&lt;h4 id=&#34;优缺点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#优缺点&#34;&gt;#&lt;/a&gt; 优缺点&lt;/h4&gt;
+&lt;p&gt;使用了面向对象思想，使用可视化编程，网络通信编程，实现了点对点通信和点对群通信，使用数据库。&lt;/p&gt;
+&lt;h4 id=&#34;调试中遇到的问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#调试中遇到的问题&#34;&gt;#&lt;/a&gt; 调试中遇到的问题&lt;/h4&gt;
+&lt;p&gt;Qt 使用信号和槽的方式传递信息，在 connect 信号和槽的过程中出现了许多错误，使用 ui 界面的相关槽的配合也带来了一定的麻烦。还有 qt 的父对象机制，在父对象析构之后会析构相应的子对象，导致部分页面无法显示。解决方法，在需要槽或信号的位置使用注释，理清思路，对相应父对象析构后，建立指向空对象的页面，防止页面被析构，在使用结束后进行析构，解除空间占用。&lt;/p&gt;
+&lt;h4 id=&#34;总结&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#总结&#34;&gt;#&lt;/a&gt; 总结&lt;/h4&gt;
+&lt;p&gt;本次课程设计使用了 Qt 进行可视化开发，Qt 的库中的类均为继承关系，通过对 Qt 中类的使用，和自己设计不同类的过程中，更为了解了面向对象的思想。&lt;/p&gt;
+</content>
+        <category term="C&amp;C++" scheme="http://leomeng86.github.io/categories/cpp/" />
+        <category term="编程" scheme="http://leomeng86.github.io/tags/%E7%BC%96%E7%A8%8B/" />
+        <category term="CPP" scheme="http://leomeng86.github.io/tags/CPP/" />
+        <updated>2022-10-29T08:38:54.000Z</updated>
+    </entry>
     <entry>
         <id>http://leomeng86.github.io/2022/09/08/cpp/CPP%E7%AC%AC%E4%B8%83%E6%AC%A1%E4%B8%8A%E6%9C%BA%E5%AE%9E%E9%AA%8C/</id>
         <title>CPP第七次上机实验</title>
