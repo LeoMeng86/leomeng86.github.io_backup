@@ -100,7 +100,7 @@
 &lt;h2 id=&#34;我的收获&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#我的收获&#34;&gt;#&lt;/a&gt; &lt;strong&gt;我的收获&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;对多态的运用有了更深的理解。初步了解组合模式的概念。&lt;/p&gt;
 &lt;h2 id=&#34;代码实现&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码实现&#34;&gt;#&lt;/a&gt; &lt;strong&gt;代码实现&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0xlb01lbmc4Ni9DcHBfZXhwZXJpbWVudC5naXQ=&#34;&gt;https://github.com/LeoMeng86/Cpp_experiment.git&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0xlb01lbmc4Ni9KTFVfY3BwX2V4cGVyaW1lbnQuZ2l0&#34;&gt;https://github.com/LeoMeng86/JLU_cpp_experiment.git&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 </content>
         <category term="C&amp;C++" scheme="http://leomeng86.github.io/categories/cpp/" />
         <category term="CPP" scheme="http://leomeng86.github.io/tags/CPP/" />
@@ -130,7 +130,7 @@
 &lt;h2 id=&#34;我的收获&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#我的收获&#34;&gt;#&lt;/a&gt; &lt;strong&gt;我的收获&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;进一步了解了数据库的相关概念，对 CPP 的 IO 类有了进一步的理解和使用，提高了编程能力。&lt;/p&gt;
 &lt;h2 id=&#34;代码实现&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码实现&#34;&gt;#&lt;/a&gt; &lt;strong&gt;代码实现&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0xlb01lbmc4Ni9DcHBfZXhwZXJpbWVudC5naXQ=&#34;&gt;https://github.com/LeoMeng86/Cpp_experiment.git&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0xlb01lbmc4Ni9KTFVfY3BwX2V4cGVyaW1lbnQuZ2l0&#34;&gt;https://github.com/LeoMeng86/JLU_cpp_experiment.git&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 </content>
         <category term="C&amp;C++" scheme="http://leomeng86.github.io/categories/cpp/" />
         <category term="CPP" scheme="http://leomeng86.github.io/tags/CPP/" />
@@ -162,7 +162,7 @@
 &lt;h2 id=&#34;tcp和udp的关系udp可以用到微信中吗&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tcp和udp的关系udp可以用到微信中吗&#34;&gt;#&lt;/a&gt; &lt;strong&gt;TCP 和 UDP 的关系？UDP 可以用到微信中吗？&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;是两种网络协议，tcp 通过三次握手，保证了消息接收和正确性，UDP 不对信心进行验证，只进行单发。微信是以消息传递为目的的，使用 UDP 协议难以保证消息的抵达和正确性，虽然加快了传输速度，但是得不偿失。&lt;/p&gt;
 &lt;h2 id=&#34;代码实现&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码实现&#34;&gt;#&lt;/a&gt; &lt;strong&gt;代码实现&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0xlb01lbmc4Ni9DcHBfZXhwZXJpbWVudC5naXQ=&#34;&gt;https://github.com/LeoMeng86/Cpp_experiment.git&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0xlb01lbmc4Ni9KTFVfY3BwX2V4cGVyaW1lbnQuZ2l0&#34;&gt;https://github.com/LeoMeng86/JLU_cpp_experiment.git&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 </content>
         <category term="C&amp;C++" scheme="http://leomeng86.github.io/categories/cpp/" />
         <category term="CPP" scheme="http://leomeng86.github.io/tags/CPP/" />
@@ -182,7 +182,7 @@
 &lt;h2 id=&#34;我的收获&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#我的收获&#34;&gt;#&lt;/a&gt; &lt;strong&gt;我的收获&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;此次收获在于加深了对静态数据已经静态函数的了解。并且对类的相关学习有了更深的理解。&lt;/p&gt;
 &lt;h2 id=&#34;代码实现&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码实现&#34;&gt;#&lt;/a&gt; &lt;strong&gt;代码实现&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0xlb01lbmc4Ni9DcHBfZXhwZXJpbWVudC5naXQ=&#34;&gt;https://github.com/LeoMeng86/Cpp_experiment.git&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0xlb01lbmc4Ni9KTFVfY3BwX2V4cGVyaW1lbnQuZ2l0&#34;&gt;https://github.com/LeoMeng86/JLU_cpp_experiment.git&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 </content>
         <category term="C&amp;C++" scheme="http://leomeng86.github.io/categories/cpp/" />
         <category term="CPP" scheme="http://leomeng86.github.io/tags/CPP/" />
@@ -218,7 +218,7 @@
 &lt;h2 id=&#34;我的收获&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#我的收获&#34;&gt;#&lt;/a&gt; &lt;strong&gt;我的收获&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;进一步掌握了有关 EasyX 的相关操作，对可视化编程有了进一步的理解。通过图形化的展示，对 Dijkstra 算法有了更深的理解。&lt;/p&gt;
 &lt;h2 id=&#34;代码实现&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码实现&#34;&gt;#&lt;/a&gt; &lt;strong&gt;代码实现&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0xlb01lbmc4Ni9DcHBfZXhwZXJpbWVudC5naXQ=&#34;&gt;https://github.com/LeoMeng86/Cpp_experiment.git&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0xlb01lbmc4Ni9KTFVfY3BwX2V4cGVyaW1lbnQuZ2l0&#34;&gt;https://github.com/LeoMeng86/JLU_cpp_experiment.git&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 </content>
         <category term="C&amp;C++" scheme="http://leomeng86.github.io/categories/cpp/" />
         <category term="CPP" scheme="http://leomeng86.github.io/tags/CPP/" />
@@ -240,7 +240,7 @@
 &lt;h2 id=&#34;我的收获&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#我的收获&#34;&gt;#&lt;/a&gt; &lt;strong&gt;我的收获&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;再次复习了类封装的相关知识，进一步领会重载和友元的意义和用法，对 STL 中的 string 类型有了更深的了解。对类内类外的权限有了进一步掌握，希望可以进一步提升自己的编程能力，对面向对象概念有更深的理解。&lt;/p&gt;
 &lt;h2 id=&#34;代码实现&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码实现&#34;&gt;#&lt;/a&gt; &lt;strong&gt;代码实现&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0xlb01lbmc4Ni9DcHBfZXhwZXJpbWVudC5naXQ=&#34;&gt;https://github.com/LeoMeng86/Cpp_experiment.git&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0xlb01lbmc4Ni9KTFVfY3BwX2V4cGVyaW1lbnQuZ2l0&#34;&gt;https://github.com/LeoMeng86/JLU_cpp_experiment.git&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 </content>
         <category term="C&amp;C++" scheme="http://leomeng86.github.io/categories/cpp/" />
         <category term="CPP" scheme="http://leomeng86.github.io/tags/CPP/" />
@@ -318,7 +318,7 @@
 &lt;h2 id=&#34;我的收获&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#我的收获&#34;&gt;#&lt;/a&gt; &lt;strong&gt;我的收获&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;进一步学习了位运算，学习 C/C++ 中接近底层的操作。巩固了高精度算法的运用，在编程过程中可以更多的考虑空间和时间的占用。在 debug 过程中有效利用 IDE 自带调试功能，以及在关键位置输出结果的方式，进行了函数的测试和使用。在 C 语言课程设计过程中学习的相关开发知识，进一步得到夯实，由过程化编程，进一步学习了面向对象的思想，巩固了类封装的相关知识。希望今后可以进一步提升自己编程能力，进一步优化程序。&lt;/p&gt;
 &lt;h2 id=&#34;代码实现&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码实现&#34;&gt;#&lt;/a&gt; &lt;strong&gt;代码实现&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0xlb01lbmc4Ni9DcHBfZXhwZXJpbWVudC5naXQ=&#34;&gt;https://github.com/LeoMeng86/Cpp_experiment.git&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0xlb01lbmc4Ni9KTFVfY3BwX2V4cGVyaW1lbnQuZ2l0&#34;&gt;https://github.com/LeoMeng86/JLU_cpp_experiment.git&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 </content>
         <category term="C&amp;C++" scheme="http://leomeng86.github.io/categories/cpp/" />
         <category term="CPP" scheme="http://leomeng86.github.io/tags/CPP/" />
